@@ -485,7 +485,7 @@ const chartConfig = {
 
 function TableCellViewer({ item }: { item: any }) {
   const isMobile = useIsMobile()
-console.log(item)
+
 
 const chartData = [
   { energent: "Elektrika", vrednost: item.ELEKTRIKA[9]["Vrednost z DDV"], fill: "#edd078ff" },

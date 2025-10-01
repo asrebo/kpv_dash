@@ -11,8 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-import { useTheme } from "next-themes"
-
 
 import {
   AdvancedMarker,
@@ -48,15 +46,6 @@ export const MarkerWithInfowindow = () => {
 
 
 export function Cardcomp() {
-  let THEME = "";
-
-  const {theme} = useTheme();
-
-  if (theme === 'dark') {
-    THEME = 'DARK';
-  } else {
-    THEME = 'LIGHT';
-  }
 
   return (
     <Card className="@container/card ">
@@ -74,7 +63,6 @@ export function Cardcomp() {
       reuseMaps={true}
       defaultCenter={{lat: 46.368550, lng: 15.102761}}
       gestureHandling={'cooperative'}
-      colorScheme={THEME}
       disableDefaultUI={true}
       style={{width: '100%', height: '500px'}}
     >
