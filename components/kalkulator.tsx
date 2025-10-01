@@ -74,7 +74,7 @@ export default function EnergyCalculator() {
   };
 
   function handler(){
-    score.percent
+    console.log(score.percent)
     setEnded(true);
 
   }
@@ -145,7 +145,7 @@ export default function EnergyCalculator() {
           </div>
          
         <div className="text-center mt-6 z-1">
-          <Button className="w-full">Zaključi test</Button>
+          <Button onClick={handler} className="w-full">Zaključi test</Button>
           <p className="text-xs text-gray-500 mt-2">
             Zadnji test {new Date().toLocaleDateString("sl-SI")}
           </p>

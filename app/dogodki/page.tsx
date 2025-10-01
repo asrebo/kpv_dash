@@ -5,8 +5,6 @@ import { Calendar, MapPin, Users, Leaf, Zap, Recycle, TreeDeciduous } from 'luci
 
 import Image from 'next/image';
 
-
-
 import { LottieAnimation1 } from '@/components/dogodki_anim';
 
 export default function GogreenPage() {

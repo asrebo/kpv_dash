@@ -24,7 +24,7 @@ import { time } from 'console';
 
 export const description = 'A bar chart';
 
-function filterByRange(range) {
+function filterByRange(range: '7d' | '30d' | '90d') {
   const now = new Date();
 
   // Determine how many days back to include
@@ -151,11 +151,11 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export default function ChartBarInteractive() {
-  const [timeRange, setTimeRange] = useState('90d');
+  const [timeRange, setTimeRange] = useState<'7d' | '30d' | '90d'>('90d');
 
   const timeFilter = filterByRange(timeRange);
 
-  function handler(e) {
+  function handler(e: '7d' | '30d' | '90d') {
     if (!e) return;
     setTimeRange(e);
   }
@@ -170,7 +170,7 @@ export default function ChartBarInteractive() {
             <ToggleGroup
               type="single"
               value={timeRange}
-              onValueChange={(e) => handler(e)}
+              onValueChange={(e) => handler(e as '7d' | '30d' | '90d')}
               variant="outline"
               className=" *:data-[slot=toggle-group-item]:!px-4 @[767px]/card:flex"
             >
