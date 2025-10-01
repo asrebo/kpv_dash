@@ -197,9 +197,9 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
   {
     id: "actions",
     header: "Znesek",
-    cell: ({row}) => (
+    cell: ({row}: {row: any}) => (
    
-      Math.round((row.original as z.infer<typeof schema>).racun.SKUPAJ["Vrednost z DDV"] * 100) / 100 + " €"
+      Math.round(row.original.racun.SKUPAJ["Vrednost z DDV"] * 100) / 100 + " €"
     )
   },
 ]
@@ -497,7 +497,7 @@ const chartData = [
     <Drawer direction={isMobile ? "bottom" : "right"}>
       <DrawerTrigger asChild>
         <Button variant="link" className="text-foreground px-0">
-          {Object.values(item)[0].racun.mesec}
+          {item.racun.mesec}
         </Button>
       </DrawerTrigger>
       <DrawerContent>
