@@ -427,7 +427,7 @@ const chartConfig = {
 export default function ChartBarInteractive() {
   const [timeRange, setTimeRange] = useState<string | undefined>('90d');
 
-  let timeFilter = filterByRange(timeRange);
+  const timeFilter = filterByRange(timeRange);
 
   function handler(e) {
     if (!e) return;

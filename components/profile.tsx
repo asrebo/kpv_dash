@@ -102,8 +102,8 @@ export default function UserProfile() {
           <TabsContent value="support">
             <Card>
               <CardHeader>
-                <CardTitle>Contact Support</CardTitle>
-                <CardDescription>Need help? Send us a message and we'll get back to you</CardDescription>
+                <CardTitle>Podpora</CardTitle>
+                <CardDescription>Potrebujete pomoč? Pošljite nam sporočilo</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">

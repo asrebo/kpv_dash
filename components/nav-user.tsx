@@ -8,6 +8,8 @@ import {
   IconUserCircle,
 } from "@tabler/icons-react"
 
+import Link from "next/link"
+
 import {
   Avatar,
   AvatarFallback,
@@ -84,28 +86,28 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <a href="/profil">
+              <Link href="/profil">
               <DropdownMenuItem>
                 <IconUserCircle />
                 Račun
               </DropdownMenuItem>
-              </a>
-              <a href="/profil">
+              </Link>
+              <Link href="/profil">
               <DropdownMenuItem>
                 <IconCreditCard />
                 Računi
               </DropdownMenuItem>
-              </a>
+              </Link>
             
              
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-              <a href="/">
+              <Link href="/">
             <DropdownMenuItem>
               <IconLogout />
               Odjava
             </DropdownMenuItem>
-              </a>
+              </Link>
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>
