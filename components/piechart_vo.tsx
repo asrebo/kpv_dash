@@ -40,13 +40,10 @@ const chartData = [
 const chartConfig = {
   visitors: {
     label: "skupaj kWh",
-  },
-  chrome: {
-    label: "Chrome",
-    color: "var(--chart-1)",
+  }
 
 } satisfies ChartConfig
-}
+
 export default function ChartPieDonutText() {
   const totalVisitors = React.useMemo(() => {
     return chartData.reduce((acc, curr) => acc + curr.vrednost, 0)

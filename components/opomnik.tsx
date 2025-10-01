@@ -17,7 +17,7 @@ import { Switch } from '@/components/ui/switch';
 
 export default function Opomnik() {
   const [enabled, setEnabled] = useState(false);
-  const [value, setValue] = useState(0);
+  const [value, setValue ] = useState(0);
 
   return (
     <Card className='w-[300px]'>
@@ -31,7 +31,7 @@ export default function Opomnik() {
       </CardHeader>
       <CardContent>
         {enabled ? (
-          <Slider onValueChange={setValue} />
+          <Slider onValueChange={(e) => setValue(e[0])} />
         ) : (
           <CardDescription >Opomnik je izklopljen</CardDescription>
         )}

@@ -7,7 +7,6 @@ import ChartPieDonutText from '@/components/piechart_vo';
 
 import Opomnik from '@/components/opomnik';
 
-import MotionComp from '@/components/motioncomp';
 
 export default function Ogrevanje() {
   return (
@@ -29,7 +28,6 @@ export default function Ogrevanje() {
             <ChartPieDonutText />
           </div>
           <Opomnik />
-          <MotionComp />
         </div>
       </SidebarInset>
     </SidebarProvider>

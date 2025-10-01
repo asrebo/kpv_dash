@@ -9,7 +9,7 @@ import { SectionCards } from '@/components/section-cards-elek';
 
 import Opomnik from '@/components/opomnik';
 
-import MotionComp from '@/components/motioncomp';
+
 
 export default function Elektrika() {
   return (
@@ -31,7 +31,7 @@ export default function Elektrika() {
             <ChartPieDonutText />
           </div>
           <Opomnik />
-          <MotionComp />
+        
         </div>
       </SidebarInset>
     </SidebarProvider>
