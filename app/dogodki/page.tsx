@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 
 
-import {  LottieAnimation1 } from '@/components/dogodki_anim';
+import { LottieAnimation1 } from '@/components/dogodki_anim';
 
 export default function GogreenPage() {
   return (
