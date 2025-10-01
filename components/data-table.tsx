@@ -151,11 +151,12 @@ const mesecSchema = z.object({
 });
 
 export const schema = z.record(z.string(), mesecSchema);
+type Mesec = z.infer<typeof mesecSchema>;
 
 
 
 
-const columns: ColumnDef<z.infer<typeof schema>>[] = [
+const columns: ColumnDef<Mesec>[] = [
 
 
   {
@@ -204,9 +205,9 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
   },
 ]
 
-function DraggableRow({ row }: { row: Row<z.infer<typeof schema>> }) {
+function DraggableRow({ row }: { row: Row<Mesec> }) {
   const { transform, transition, setNodeRef, isDragging } = useSortable({
-    id: row.original.id,
+    id: row.id as unknown as UniqueIdentifier,
   })
 
   return (
@@ -232,7 +233,7 @@ function DraggableRow({ row }: { row: Row<z.infer<typeof schema>> }) {
 export function DataTable({
   data: initialData,
 }: {
-  data: z.infer<typeof schema>[]
+  data: Mesec[]
 }) {
 
   initialData = initialData.reverse(); 
@@ -256,7 +257,7 @@ export function DataTable({
   )
 
   const dataIds = React.useMemo<UniqueIdentifier[]>(
-    () => data?.map(({racun:{id}}) => id ) || [],
+    () => data?.map(({ racun: { id } }) => String(id)) || [],
     [data]
   )
 
@@ -272,7 +273,7 @@ export function DataTable({
       pagination,
     },
      enableColumnResizing: true,
-    getRowId: (row) => row.racun.id,
+    getRowId: (row) => String(row.racun.id),
     enableRowSelection: true,
     onRowSelectionChange: setRowSelection,
     onSortingChange: setSorting,
@@ -482,7 +483,7 @@ const chartConfig = {
 
 
 
-function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
+function TableCellViewer({ item }: { item: any }) {
   const isMobile = useIsMobile()
 console.log(item)
 
@@ -549,7 +550,7 @@ const chartData = [
     </Drawer>
   )
 }
- const IconMap = {
+ const IconMap: any = {
     'Elektrika': Zap,
     'Ogrevanje': Thermometer,
     'Voda in Komunalne Storitve': Droplet,
@@ -582,11 +583,11 @@ const InvoiceTable = ({ racun }: { racun: any }) => {
    * Prikazuje podatke kot vertikalno zložene sezname (kartice),
    * primerno za ozke prikaze (sidebar, mobilni telefon).
    */
-  const renderTable = (data, title) => {
+  const renderTable = (data: any, title: any) => {
     if (!data || data.length === 0) {
       return null;
     }
- const IconComponent = IconMap[title];
+ const IconComponent = IconMap[title] ;
     // Zadnji element je vedno vsota (SKUPAJ)
     const totalRow = data[data.length - 1];
     const items = data.slice(0, -1);
@@ -601,7 +602,7 @@ const InvoiceTable = ({ racun }: { racun: any }) => {
           </h2>
         <div className="space-y-3"> 
           {/* Prikaz posameznih postavk kot vertikalno zložene kartice */}
-          {items.map((item, index) => (
+          {items.map((item: any, index: number) => (
             <div key={index} className="p-3 bg-white rounded-lg border border-gray-200 transition duration-150">
                 
                 {/* Glavna vrstica: Opis in Vrednost z DDV */}
