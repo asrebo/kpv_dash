@@ -90,13 +90,13 @@ export default function EnergyCalculator() {
         {categories.map((cat) => (
           <Card key={cat.title} className="p-4">
             <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <cat.icon className="w-5 h-5 text-blue-600" /> {cat.title}
+              <cat.icon className="w-5 h-5 text-[var(--primary)]" /> {cat.title}
             </h2>
             <CardContent className="space-y-10">
               {cat.items.map(({ label, icon: Icon }) => (
                 <div key={label} className="flex flex-col">
                   <div className="flex items-center gap-2 mb-1">
-                    <Icon className="w-4 h-4 text-blue-600" />
+                    <Icon className="w-4 h-4 text-[var(--primary)]" />
                     <p className="text-sm font-medium">{label}</p>
                   </div>
                   <Slider
@@ -119,11 +119,11 @@ export default function EnergyCalculator() {
       </div>
 
       {/* Desna stran - rezultati */}
-      <div className="bg-blue-50 p-6 rounded-2xl flex flex-col justify-between relative">
+      <div className="bg-[#f1f0e9] p-6 rounded-2xl flex flex-col justify-between relative">
           
         <div className="space-y-6">
           {score.scores.map(({ title, icon: Icon, current, max }) => (
-            <div key={title} className="flex items-center gap-3 text-blue-700">
+            <div key={title} className="flex items-center gap-3 ">
               <Icon className="w-5 h-5" />
               <span className="font-semibold flex-1">{title}</span>
               <span className="font-bold">{current} / {max}</span>
@@ -131,7 +131,7 @@ export default function EnergyCalculator() {
           ))}
         </div>
          <div className="text-center mt-4">
-            <p className="text-4xl font-bold text-blue-700">{score.percent}%</p>
+            <p className="text-4xl font-bold text-[var(--primary)]">{score.percent}%</p>
             <p className="text-sm text-gray-600">
               Skupna ocena ({score.totalCurrent} / {score.totalMax})
             </p>
