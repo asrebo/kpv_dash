@@ -24,7 +24,7 @@ import { time } from 'console';
 
 export const description = 'A bar chart';
 
-function filterByRange(range) {
+function filterByRange(range: '7d' | '30d' | '90d') {
   const now = new Date();
 
 
@@ -427,9 +427,9 @@ const chartConfig = {
 export default function ChartBarInteractive() {
   const [timeRange, setTimeRange] = useState('90d');
 
-  const timeFilter = filterByRange(timeRange);
+  const timeFilter = filterByRange(timeRange as '7d' | '30d' | '90d');
 
-  function handler(e) {
+  function handler(e: string) {
     if (!e) return;
     setTimeRange(e);
   }

@@ -47,16 +47,17 @@ const categories = [
 const marks = ["Brez", "Dotrajano", "Starejše", "Solidno", "Novo"];
 
 export default function EnergyCalculator() {
-  const [values, setValues] = useState({});
+  const [ended, setEnded] = useState(false);
+  const [values, setValues] = useState<Record<string, number>>({});
 
-  const handleChange = (key, val) => {
+  const handleChange = (key: string, val: number) => {
     setValues((prev) => ({ ...prev, [key]: val }));
   };
 
   const getScore = () => {
     const scores = categories.map((cat) => {
       const keys = cat.items.map((i) => i.label);
-      const current = keys.reduce((sum, key) => sum + (values[key] || 0), 0);
+      const current = keys.reduce((sum, key) => sum + (values[key]  || 0), 0);
       const max = keys.length * 5;
       return { title: cat.title, icon: cat.icon, current, max };
     });
@@ -71,6 +72,12 @@ export default function EnergyCalculator() {
       scores,
     };
   };
+
+  function handler(){
+    score.percent
+    setEnded(true);
+
+  }
 
   const score = getScore();
 
