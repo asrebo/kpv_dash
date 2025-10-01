@@ -3,7 +3,7 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
-export function LottieAnimation({ path, style }) {
+export function LottieAnimation1() {
   return <DotLottieReact
         src="./kolendar.lottie"
         loop

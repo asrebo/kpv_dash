@@ -93,6 +93,15 @@ export default function BikerRide() {
         />
       </div>
       <div className="p-8 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 w-full">
+             <div className="text-center  col-span-3">
+               
+                  <h1 className="text-4xl font-bold text-gray-800 mb-2">
+                    Uporaba kolesa namesto avtomobila
+                  </h1>
+                  <p className="text-gray-600">
+                    Pridružite se nam pri pozitivnem vplivu na naše okolje
+                  </p>
+                </div>
         <Card className=" p-6 flex flex-col relative  col-span-3 bg-[#ffffff7d]">
           <CardHeader>
             <CardTitle className="text-xl flex gap-2">
