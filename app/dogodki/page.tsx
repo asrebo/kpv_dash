@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 
 
-import { LottieAnimation } from '@/components/dogodki_anim';
+import {  LottieAnimation1 } from '@/components/dogodki_anim';
 
 export default function GogreenPage() {
   return (
@@ -75,7 +75,7 @@ function GreenEvents() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
-           <LottieAnimation  />
+           <LottieAnimation1  />
           </div>
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
             Prihajajoči zeleni dogodki
