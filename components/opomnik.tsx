@@ -20,11 +20,11 @@ export default function Opomnik() {
   const [value, setValue] = useState(0);
 
   return (
-    <Card>
+    <Card className='w-[300px]'>
       <CardHeader>
         <CardTitle> <BellRing className='text-[var(--primary)] inline mx-2'/>Opomnik</CardTitle>
         <CardDescription>Nastavi opomnik</CardDescription>
-        <div className='text-2xl font-bold'>{enabled && (value +" m3")}</div>
+        <div className='text-2xl font-bold'>{enabled && (value)}</div>
         <CardAction>
           <Switch onCheckedChange={setEnabled} />
         </CardAction>

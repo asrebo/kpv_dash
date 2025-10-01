@@ -29,8 +29,8 @@ export default function UserProfile() {
     <div className=" p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">User Profile</h1>
-          <p className="text-slate-600">Manage your account and preferences</p>
+          <h1 className="text-4xl font-bold text-slate-900 mb-2">Uporabniški profil</h1>
+          <p className="text-slate-600">Upravlja svoj račun in nastavitve</p>
         </div>
 
         <Tabs defaultValue="info" className="w-full">

@@ -150,9 +150,9 @@ const mesecSchema = z.object({
   VODA: kategorijaSchema,
 });
 
-export const schema = z.record(mesecSchema);
+export const schema = z.record(z.string(), mesecSchema);
 
-// Create a separate component for the drag handle
+
 
 
 const columns: ColumnDef<z.infer<typeof schema>>[] = [
@@ -199,7 +199,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
     header: "Znesek",
     cell: ({row}) => (
    
-      Math.round(row.original.racun.SKUPAJ["Vrednost z DDV"] * 100) / 100 + " €"
+      Math.round((row.original as z.infer<typeof schema>).racun.SKUPAJ["Vrednost z DDV"] * 100) / 100 + " €"
     )
   },
 ]
@@ -497,7 +497,7 @@ const chartData = [
     <Drawer direction={isMobile ? "bottom" : "right"}>
       <DrawerTrigger asChild>
         <Button variant="link" className="text-foreground px-0">
-          {item.racun.mesec}
+          {Object.values(item)[0].racun.mesec}
         </Button>
       </DrawerTrigger>
       <DrawerContent>
@@ -516,7 +516,7 @@ const chartData = [
         >
           <PieChart>
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />
-            <Pie data={chartData} dataKey="vrednost"  label={({ name }) => `${name}`}  nameKey="energent" />
+            <Pie data={chartData} dataKey="vrednost" nameKey="energent" label={(props) => String(props.name)} />
           </PieChart>
         </ChartContainer>
  
@@ -555,7 +555,7 @@ const chartData = [
     'Voda in Komunalne Storitve': Droplet,
   };
 
-const InvoiceTable = ({ racun }) => {
+const InvoiceTable = ({ racun }: { racun: any }) => {
   if (!racun) {
     return <div className="p-6 text-center text-red-600 font-semibold bg-red-100 rounded-xl shadow-md">Ni podatkov o računu.</div>;
   }
@@ -568,7 +568,7 @@ const InvoiceTable = ({ racun }) => {
   } = racun;
 
   // Funkcija za oblikovanje števil na dve decimalki
-  const formatCurrency = (value) => {
+  const formatCurrency = (value: any) => {
     // Poskušamo parsati float, če je to mogoče
     const num = parseFloat(value);
     if (isNaN(num)) {
