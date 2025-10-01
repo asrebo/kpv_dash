@@ -50,7 +50,7 @@ export const MarkerWithInfowindow = () => {
 export function Cardcomp() {
   let THEME = "";
 
-  let {theme} = useTheme();
+  const {theme} = useTheme();
 
   if (theme === 'dark') {
     THEME = 'DARK';
