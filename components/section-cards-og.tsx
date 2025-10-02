@@ -1,4 +1,4 @@
-import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react"
+import {IconNetwork, IconTrendingDown, IconTrendingUp } from "@tabler/icons-react"
 
 
 import PriklopnaMoc from "./priklopnaMoc"
@@ -97,7 +97,7 @@ export function SectionCards() {
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Delovanje omrežja <IconTrendingUp className="size-4" />
+            Delovanje omrežja <IconNetwork className="size-4" />
           </div>
           <div className="text-muted-foreground">
             Nemoteno

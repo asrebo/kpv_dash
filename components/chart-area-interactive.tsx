@@ -847,28 +847,28 @@ export function ChartAreaInteractive() {
               dataKey="elektrika_kWh"
               type="natural"
               fill="url(#fill1)"
-              stroke="var(--color-desktop)"
+              stroke="var(--chart-1)"
               stackId="b"
             />
              <Area
               dataKey="ogrevanje_kWh"
               type="natural"
               fill="url(#fill2)"
-              stroke="var(--color-desktop)"
+              stroke="var(--chart-2)"
               stackId="b"
             />
              <Area
               dataKey="voda_m3"
               type="natural"
               fill="url(#fill3)"
-              stroke="var(--color-desktop)"
+              stroke="var(--chart-3)"
               stackId="b"
             />
              <Area
               dataKey="skupaj"
               type="natural"
               fill="url(#fill4)"
-              stroke="var(--color-desktop)"
+              stroke="var(--chart-4)"
               stackId="b"
             />
           </AreaChart>
