@@ -12,6 +12,7 @@ import MapComp from '@/components/ui/map';
 import data from './racuni1.json';
 
 export default function Page() {
+  "use memo"
   return (
     <SidebarProvider
       style={
