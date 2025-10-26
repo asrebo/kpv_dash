@@ -1,103 +1,125 @@
+"use client";
+
+import React, { useState, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Lock, Mail } from "lucide-react";
 
-export default function Home() {
+export default function ShadcnLoginPage() {
+  const router = useRouter();
+  const [form, setForm] = useState({ email: "", password: "" });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
+  const handleSubmit = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      setLoading(true);
+      try {
+        // TODO: perform real authentication call here
+        await router.push("/dashboard");
+      } finally {
+        setLoading(false);
+      }
+    },
+    [router]
+  );
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 relative overflow-hidden bg-sidebar">
+      <motion.div
+        initial={{ opacity: 0, y: 8, scale: 0.995 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.45 }}
+        className="z-10 w-full max-w-md p-6"
+      >
+        <Card className="shadow-2xl">
+          <CardHeader className="space-y-4 p-6 text-center">
+            <div className="flex justify-center">
+              <div className="inline-flex">
+                <Image src="/kpv_logo.png" alt="KPV logo" width={96} height={96} priority />
+              </div>
+            </div>
+            <CardTitle className="text-xl font-semibold">Dobrodošli nazaj</CardTitle>
+            <CardDescription>Prijavite se v svoj račun za nadaljevanje.</CardDescription>
+          </CardHeader>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <CardContent className="p-6">
+            <form onSubmit={handleSubmit} className="space-y-4" aria-busy={loading}>
+              <div>
+                <Label htmlFor="email">E-naslov</Label>
+                <div className="mt-1 relative">
+                  <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" aria-hidden={true} />
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="vi@example.com"
+                    value={form.email}
+                    onChange={handleChange}
+                    className="pl-10"
+                    required
+                    aria-label="E-naslov"
+                    disabled={loading}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <Label htmlFor="password">Geslo</Label>
+                <div className="mt-1 relative">
+                  <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" aria-hidden={true} />
+                  <Input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="********"
+                    value={form.password}
+                    onChange={handleChange}
+                    className="pl-10"
+                    required
+                    aria-label="Geslo"
+                    disabled={loading}
+                  />
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <label className="flex items-center gap-2 text-sm">
+                  <input type="checkbox" className="h-4 w-4 rounded border" disabled={loading} />
+                  <span>Zapomni si me</span>
+                </label>
+                <Link href="/forgot-password" className="text-sm hover:underline">
+                  Pozabljeno geslo?
+                </Link>
+              </div>
+
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Prijavljanje..." : "Prijava"}
+              </Button>
+            </form>
+
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              Nimate računa? <Link href="/register" className="underline">Ustvarite ga</Link>
+            </p>
+          </CardContent>
+        </Card>
+
+        <p className="text-center mt-4 text-xs text-muted-foreground">
+          Z nadaljevanjem se strinjate z našimi <Link href="/terms" className="underline">Pogoji uporabe</Link> in{" "}
+          <Link href="/privacy" className="underline">Politiko zasebnosti</Link>.
+        </p>
+      </motion.div>
     </div>
   );
 }
