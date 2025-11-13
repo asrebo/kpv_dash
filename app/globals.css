@@ -23,11 +23,11 @@
   --border: oklch(0.8847 0.0069 97.3627);
   --input: oklch(0.7621 0.0156 98.3528);
   --ring: oklch(0.6171 0.1375 39.0427);
-  --chart-1: #FE7743;
-  --chart-2: #273F4F;
-  --chart-3: #447D9B;
-  --chart-4: #D7D7D7;
-  --chart-5: #b4552d;
+  --chart-1: #f4c418e8;
+  --chart-2: #eb5325;
+  --chart-3: #53b3e7;
+  --chart-4: #d8d8d8;
+  --chart-5: #1aa3a5;
   --sidebar: #f5f4ee;
   --sidebar-foreground: oklch(0.3590 0.0051 106.6524);
   --sidebar-primary: oklch(0.6171 0.1375 39.0427);

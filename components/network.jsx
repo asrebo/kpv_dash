@@ -63,12 +63,12 @@ export default function Network() {
   }, []);
 
   return (
-    <Card className="w-full h-full">
+    <Card className=" w-full">
       <CardHeader>
         <CardTitle>Omrežje</CardTitle> 
         <CardDescription>Ni zaznanih motenj v dobavi</CardDescription>
       </CardHeader>
-      <CardContent className="flex justify-center items-center max-w-[500px]">
+      <CardContent className="max-w-[500px] w-full mx-auto">
         
         <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           viewBox="0 0 500 325.1" enableBackground="new 0 0 500 325.1" >
@@ -113,7 +113,7 @@ export default function Network() {
 		
 
       </CardContent>
-	  		<CardFooter className="border-t py-2 text-xl font-bold flex justify-center items-center gap-2">  
+	  		<CardFooter className="border-t py-2 text-xl font-bold flex justify-center items-center gap-2 flex-1">  
 			<CircleCheck 
         size={28}         // Set the size of the icon
         color="#4bc54bff"  // Set the color to a matching green

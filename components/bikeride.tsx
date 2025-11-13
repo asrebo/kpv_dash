@@ -38,37 +38,39 @@ import {
 
 export const description = 'A stacked bar chart with a legend';
 const chartData = [
-  { month: 'April', avto: 286, kolo: 80 },
-  { month: 'Maj', avto: 305, kolo: 200 },
-  { month: 'Junij', avto: 237, kolo: 120 },
-  { month: 'Julij', avto: 873, kolo: 190 },
-  { month: 'Avgust', avto: 409, kolo: 130 },
-  { month: 'September', avto: 214, kolo: 140 },
+  { month: 'April', avto: 286, kolo: 80, javni_prevoz: 145 },
+  { month: 'Maj', avto: 305, kolo: 200, javni_prevoz: 178 },
+  { month: 'Junij', avto: 237, kolo: 120, javni_prevoz: 132 },
+  { month: 'Julij', avto: 873, kolo: 190, javni_prevoz: 98 },
+  { month: 'Avgust', avto: 409, kolo: 130, javni_prevoz: 156 },
+  { month: 'September', avto: 214, kolo: 140, javni_prevoz: 189 },
 ];
+
 const chartData1 = [
-  { month: 'April', avto: 142, kolo: 195 },
-  { month: 'Maj', avto: 278, kolo: 285 },
-  { month: 'Junij', avto: 195, kolo: 134 },
-  { month: 'Julij', avto: 289, kolo: 67 },
-  { month: 'Avgust', avto: 256, kolo: 218 },
-  { month: 'September', avto: 223, kolo: 156 },
+  { month: 'April', avto: 142, kolo: 195, javni_prevoz: 167 },
+  { month: 'Maj', avto: 278, kolo: 285, javni_prevoz: 142 },
+  { month: 'Junij', avto: 195, kolo: 134, javni_prevoz: 198 },
+  { month: 'Julij', avto: 289, kolo: 67, javni_prevoz: 176 },
+  { month: 'Avgust', avto: 256, kolo: 218, javni_prevoz: 134 },
+  { month: 'September', avto: 223, kolo: 156, javni_prevoz: 205 },
 ];
+
 const chartData2 = [
-  { month: 'April', avto: 168, kolo: 92 },
-  { month: 'Maj', avto: 291, kolo: 178 },
-  { month: 'Junij', avto: 215, kolo: 145 },
-  { month: 'Julij', avto: 124, kolo: 203 },
-  { month: 'Avgust', avto: 247, kolo: 136 },
-  { month: 'September', avto: 189, kolo: 127 },
+  { month: 'April', avto: 168, kolo: 92, javni_prevoz: 183 },
+  { month: 'Maj', avto: 291, kolo: 178, javni_prevoz: 156 },
+  { month: 'Junij', avto: 215, kolo: 145, javni_prevoz: 171 },
+  { month: 'Julij', avto: 124, kolo: 203, javni_prevoz: 194 },
+  { month: 'Avgust', avto: 247, kolo: 136, javni_prevoz: 148 },
+  { month: 'September', avto: 189, kolo: 127, javni_prevoz: 167 },
 ];
 
 const chartData3 = [
-  { month: 'April', avto: 155, kolo: 20 },
-  { month: 'Maj', avto: 312, kolo: 3 },
-  { month: 'Junij', avto: 201, kolo: 30 },
-  { month: 'Julij', avto: 96, kolo: 12 },
-  { month: 'Avgust', avto: 234, kolo: 4 },
-  { month: 'September', avto: 268, kolo: 15 },
+  { month: 'April', avto: 155, kolo: 20, javni_prevoz: 89 },
+  { month: 'Maj', avto: 312, kolo: 3, javni_prevoz: 67 },
+  { month: 'Junij', avto: 201, kolo: 30, javni_prevoz: 78 },
+  { month: 'Julij', avto: 96, kolo: 12, javni_prevoz: 103 },
+  { month: 'Avgust', avto: 234, kolo: 4, javni_prevoz: 72 },
+  { month: 'September', avto: 268, kolo: 15, javni_prevoz: 94 },
 ];
 const chartConfig = {
   avto: {
@@ -78,6 +80,10 @@ const chartConfig = {
   kolo: {
     label: 'Kolo',
     color: 'var(--chart-2)',
+  },
+  javni_prevoz: {
+    label: 'Javni prevoz',
+    color: 'var(--chart-3)',
   },
 } satisfies ChartConfig;
 
@@ -93,25 +99,31 @@ export default function BikerRide() {
         />
       </div>
       <div className="p-8 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 w-full">
-             <div className="text-center  col-span-3">
-               
-                  <h1 className="text-4xl font-bold text-gray-800 mb-2">
-                    Uporaba kolesa namesto avtomobila
-                  </h1>
-                  <p className="text-gray-600">
-                    Pridružite se nam pri pozitivnem vplivu na naše okolje
-                  </p>
-                </div>
+        <div className="text-center  col-span-3">
+
+          <h1 className="text-4xl font-bold text-gray-800 mb-2">
+            Uporaba kolesa namesto avtomobila
+          </h1>
+          <p className="text-gray-600">
+            Pridružite se nam pri pozitivnem vplivu na naše okolje
+          </p>
+          <div className="flex justify-center gap-4 mt-4">
+            <div className='flex flex-col'>  <Image src="/car.svg" alt="Revenue" width={40} height={40} />Avto</div>
+            <div className='flex flex-col'>  <Image src="/bike.svg" alt="Revenue" width={40} height={40} />Kolo</div>
+            <div className='flex flex-col'>  <Image src="/bus.svg" alt="Revenue" width={40} height={40} />Javni prevoz</div>
+
+          </div>
+        </div>
         <Card className=" p-6 flex flex-col relative  col-span-3 bg-[#ffffff7d]">
           <CardHeader>
             <CardTitle className="text-xl flex gap-2">
               <Avatar className="">
                 <AvatarImage src="/4.png" />
               </Avatar>
-              Tomaž Zajc 
+              Tomaž Zajc
             </CardTitle>
             <CardDescription>January - June 2024</CardDescription>
-            <CardAction className='p-4 bg-[var(--chart-3)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 12 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
+            <CardAction className='p-4 bg-[var(--chart-4)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 12 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
           </CardHeader>
           <CardContent className="flex flex-1 ">
             <div className="flex-1">
@@ -132,13 +144,19 @@ export default function BikerRide() {
                   <Bar
                     dataKey="avto"
                     stackId="a"
-                    fill="var(--chart-1)"
+                    fill="var(--chart-2)"
                     radius={[0, 0, 4, 4]}
                   />
                   <Bar
                     dataKey="kolo"
                     stackId="a"
-                    fill="var(--chart-3)"
+                    fill="var(--chart-5)"
+                    radius={[4, 4, 0, 0]}
+                  />
+                    <Bar
+                    dataKey="javni_prevoz"
+                    stackId="a"
+                    fill="var(--chart-4)"
                     radius={[4, 4, 0, 0]}
                   />
                 </BarChart>
@@ -176,13 +194,19 @@ export default function BikerRide() {
                   <Bar
                     dataKey="avto"
                     stackId="a"
-                    fill="var(--chart-1)"
+                    fill="var(--chart-2)"
                     radius={[0, 0, 4, 4]}
                   />
                   <Bar
                     dataKey="kolo"
                     stackId="a"
-                    fill="var(--chart-3)"
+                    fill="var(--chart-5)"
+                    radius={[4, 4, 0, 0]}
+                  />
+                        <Bar
+                    dataKey="javni_prevoz"
+                    stackId="a"
+                    fill="var(--chart-4)"
                     radius={[4, 4, 0, 0]}
                   />
                 </BarChart>
@@ -220,13 +244,19 @@ export default function BikerRide() {
                   <Bar
                     dataKey="avto"
                     stackId="a"
-                    fill="var(--chart-1)"
+                    fill="var(--chart-2)"
                     radius={[0, 0, 4, 4]}
                   />
                   <Bar
                     dataKey="kolo"
                     stackId="a"
-                    fill="var(--chart-3)"
+                    fill="var(--chart-5)"
+                    radius={[4, 4, 0, 0]}
+                  />
+                        <Bar
+                    dataKey="javni_prevoz"
+                    stackId="a"
+                    fill="var(--chart-4)"
                     radius={[4, 4, 0, 0]}
                   />
                 </BarChart>
@@ -264,13 +294,19 @@ export default function BikerRide() {
                   <Bar
                     dataKey="avto"
                     stackId="a"
-                    fill="var(--chart-1)"
+                    fill="var(--chart-2)"
                     radius={[0, 0, 4, 4]}
                   />
                   <Bar
                     dataKey="kolo"
                     stackId="a"
-                    fill="var(--chart-3)"
+                    fill="var(--chart-5)"
+                    radius={[0, 0, 0, 0]}
+                  />
+                        <Bar
+                    dataKey="javni_prevoz"
+                    stackId="a"
+                    fill="var(--chart-4)"
                     radius={[4, 4, 0, 0]}
                   />
                 </BarChart>
@@ -278,10 +314,9 @@ export default function BikerRide() {
             </div>
           </CardContent>
         </Card>
-
         <Drawer>
           <div className="col-span-3 flex justify-items-center">
-            <DrawerTrigger className="bg-[var(--primary)] p-3 w-[200]  text-white  rounded-full">
+            <DrawerTrigger className="bg-[#176b6d] p-3 w-[200]  text-white  rounded-full">
               Dodaj uporabnika
             </DrawerTrigger>
           </div>

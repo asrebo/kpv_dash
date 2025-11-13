@@ -6,6 +6,7 @@ import ChartBarInteractive from '@/components/barchart_og';
 import { ChartPieDonutText } from '@/components/piechart_og';
 
 import Opomnik from '@/components/opomnik';
+import Temp from '@/components/temp';
 
 
 
@@ -29,7 +30,12 @@ export default function Ogrevanje() {
               <ChartBarInteractive />
               <ChartPieDonutText />
             </div>
+            <div className='flex gap-3'>
             <Opomnik />
+            <div className='flex-1'>
+              <Temp />
+            </div>
+            </div>
           
       
         </div>

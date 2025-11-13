@@ -30,7 +30,7 @@ export default function Elektrika() {
             <ChartBarInteractive />
             <ChartPieDonutText />
           </div>
-          <Opomnik />
+          <Opomnik w={"small"} />
         
         </div>
       </SidebarInset>
