@@ -20,7 +20,7 @@ export default function Opomnik({ w } : { w?: "small" | "large" }) {
   const [value, setValue ] = useState(0);
 
   return (
-    <Card className={w === "small" ? 'w-64 md:w-80 lg:w-96' : 'flex-1'}>
+    <Card className={' md:w-80 lg:w-96'}>
       <CardHeader>
         <CardTitle> <BellRing className='text-[var(--primary)] inline mx-2'/>Opomnik</CardTitle>
         <CardDescription>Nastavi opomnik</CardDescription>

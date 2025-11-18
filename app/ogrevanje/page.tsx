@@ -31,8 +31,8 @@ export default function Ogrevanje() {
               <ChartPieDonutText />
             </div>
             <div className='flex gap-3'>
-            <Opomnik />
-            <div className='flex-1'>
+            <Opomnik w={"small"} />
+            <div className=''>
               <Temp />
             </div>
             </div>

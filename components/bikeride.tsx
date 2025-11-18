@@ -102,7 +102,7 @@ export default function BikerRide() {
         <div className="text-center  col-span-3">
 
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
-            Uporaba kolesa namesto avtomobila
+            Uporaba okolju prijaznih načinov mobilnosti
           </h1>
           <p className="text-gray-600">
             Pridružite se nam pri pozitivnem vplivu na naše okolje

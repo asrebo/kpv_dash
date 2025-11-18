@@ -49,7 +49,7 @@ export function NavDocuments({
         <a href="./gogreen">
             <SidebarMenuButton className="bg-white p-6">
                 <Image src="/kolo.png" alt="Go Green" width={32} height={32} className="inline" />
-                {"Kolo"}
+                {"Okolju prijazna mobilnost"}
             </SidebarMenuButton>
         </a>
         <a href="./kalkulator">

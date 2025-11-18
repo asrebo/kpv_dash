@@ -3781,8 +3781,7 @@
           "Vrednost z DDV": 29.57235968695
         }
       ]
-    }
-  ,
+   },
    {
       "racun": {
         "mesec": "avgust",
@@ -4125,6 +4124,692 @@
           "Vrednost z DDV": 29.91
         }
       ]
+    },
+  {
+      "racun": {
+        "mesec": "september",
+        "leto": 2025,
+        "id": 25050411,
+        "SKUPAJ": {
+          "Količina": 1275.7184,
+          "Vredn. brez DDV": 362.10748706000004,
+          "Vrednost DDV": 76.28305385195,
+          "Vrednost z DDV": 438.39054091195
+        }
+      },
+      "ELEKTRIKA": [
+        {
+          "Zap.": 17,
+          "Storitev/opis": "Dogovorjena moč",
+          "Količina": 2.3,
+          "EM": "kW",
+          "Cena brez DDV": 0.16297,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.19882,
+          "Vredn. brez DDV": 0.37,
+          "Vrednost DDV": 0.0814,
+          "Vrednost z DDV": 0.4514
+        },
+        {
+          "Zap.": 19,
+          "Storitev/opis": "Energija VT",
+          "Količina": 105,
+          "EM": "kWh",
+          "Cena brez DDV": 0.12479,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.15224,
+          "Vredn. brez DDV": 13.10295,
+          "Vrednost DDV": 2.882649,
+          "Vrednost z DDV": 15.985599
+        },
+        {
+          "Zap.": 20,
+          "Storitev/opis": "Energija MT",
+          "Količina": 113,
+          "EM": "kWh",
+          "Cena brez DDV": 0.10285,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.12548,
+          "Vredn. brez DDV": 11.62105,
+          "Vrednost DDV": 2.556631,
+          "Vrednost z DDV": 14.177681
+        },
+        {
+          "Zap.": 18,
+          "Storitev/opis": "Prevzeta EE Omrežnina",
+          "Količina": 218,
+          "EM": "kWh",
+          "Cena brez DDV": 0.01831,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.02234,
+          "Vredn. brez DDV": 3.99398,
+          "Vrednost DDV": 0.8786756,
+          "Vrednost z DDV": 4.8726556
+        },
+        {
+          "Zap.": 21,
+          "Storitev/opis": "Fiks.del-pavšalni strošek",
+          "Količina": 1,
+          "EM": "",
+          "Cena brez DDV": 0.99,
+          "DDV%": 0.22,
+          "Cena z DDV": 1.2078,
+          "Vredn. brez DDV": 0.99,
+          "Vrednost DDV": 0.22,
+          "Vrednost z DDV": 1.21
+        },
+        {
+          "Zap.": 22,
+          "Storitev/opis": "Prispevek OVE+SPTE",
+          "Količina": 2.3,
+          "EM": "kW",
+          "Cena brez DDV": 0.77562,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.94626,
+          "Vredn. brez DDV": 1.78,
+          "Vrednost DDV": 0.39,
+          "Vrednost z DDV": 2.17
+        },
+        {
+          "Zap.": 23,
+          "Storitev/opis": "Prispevek za EnU",
+          "Količina": 218,
+          "EM": "kWh",
+          "Cena brez DDV": 0.0008,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.00098,
+          "Vredn. brez DDV": 0.1744,
+          "Vrednost DDV": 0.038368,
+          "Vrednost z DDV": 0.212768
+        },
+        {
+          "Zap.": 24,
+          "Storitev/opis": "Prispevek za DelOp",
+          "Količina": 218,
+          "EM": "kWh",
+          "Cena brez DDV": 0.00013,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.00016,
+          "Vredn. brez DDV": 0.02834,
+          "Vrednost DDV": 0.0062348,
+          "Vrednost z DDV": 0.0345748
+        },
+        {
+          "Zap.": 25,
+          "Storitev/opis": "Trošarina I",
+          "Količina": 218,
+          "EM": "kWh",
+          "Cena brez DDV": 0.00153,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.00187,
+          "Vredn. brez DDV": 0.33354,
+          "Vrednost DDV": 0.0733788,
+          "Vrednost z DDV": 0.4069188
+        },
+        {
+          "Zap.": "SKUPAJ",
+          "Storitev/opis": "Skupaj",
+          "Količina": 1095.6,
+          "Vredn. brez DDV": 32.39426,
+          "Vrednost DDV": 7.1273371999999995,
+          "Vrednost z DDV": 39.5215972
+        }
+      ],
+      "OGREVANJE": [
+        {
+          "Zap.": 1,
+          "Storitev/opis": "OGP 02 Ogrevanje prost. INDUSTR. O",
+          "Količina": 2.6515,
+          "EM": "MWh",
+          "Cena brez DDV": 73.05421,
+          "DDV%": 0.22,
+          "Cena z DDV": 89.12614,
+          "Vredn. brez DDV": 193.68412865,
+          "Vrednost DDV": 42.610508303,
+          "Vrednost z DDV": 236.294636953
+        },
+        {
+          "Zap.": 2,
+          "Storitev/opis": "OGP 02 Obračunska moč (OP)-IND. O",
+          "Količina": 0.0355,
+          "EM": "MW",
+          "Cena brez DDV": 2885.3,
+          "DDV%": 0.22,
+          "Cena z DDV": 3520.07,
+          "Vredn. brez DDV": 102.42,
+          "Vrednost DDV": 22.53,
+          "Vrednost z DDV": 124.95
+        },
+        {
+          "Zap.": 3,
+          "Storitev/opis": "Dodatek k ceni toplota",
+          "Količina": 2.6515,
+          "EM": "MWh",
+          "Cena brez DDV": 0.8,
+          "DDV%": 0.22,
+          "Cena z DDV": 0.976,
+          "Vredn. brez DDV": 2.1212,
+          "Vrednost DDV": 0.466664,
+          "Vrednost z DDV": 2.587864
+        },
+        {
+          "Zap.": 4,
+          "Storitev/opis": "Prispevek za OVE in SPTE toplota",
+          "Količina": 2.6515,
+          "EM": "MWh",
+          "Cena brez DDV": 0.99045,
+          "DDV%": 0.22,
+          "Cena z DDV": 1.20835,
+          "Vredn. brez DDV": 2.6262976,
+          "Vrednost DDV": 0.577785472,
+          "Vrednost z DDV": 3.204083072
+        },
+        {
+          "Zap.": 5,
+          "Storitev/opis": "Stevnina toplotna energija",
+          "Količina": 0.45,
+          "EM": "KOM",
+          "Cena brez DDV": 5.02738,
+          "DDV%": 0.22,
+          "Cena z DDV": 4.1208,
+          "Vredn. brez DDV": 1.85,
+          "Vrednost DDV": 0.41,
+          "Vrednost z DDV": 2.26
+        },
+        {
+          "Zap.": "SKUPAJ",
+          "Storitev/opis": "Skupaj",
+          "Količina": 8.44,
+          "Vredn. brez DDV": 302.70162625,
+          "Vrednost DDV": 66.594957775,
+          "Vrednost z DDV": 369.296584025
+        }
+      ],
+      "VODA": [
+        {
+          "Zap.": 6,
+          "Storitev/opis": "Vodarina",
+          "Količina": 2.7,
+          "EM": "m3",
+          "Cena brez DDV": 0.9709,
+          "DDV%": 0.095,
+          "Cena z DDV": 1.06314,
+          "Vredn. brez DDV": 2.62143,
+          "Vrednost DDV": 0.24903585,
+          "Vrednost z DDV": 2.87046585
+        },
+        {
+          "Zap.": 7,
+          "Storitev/opis": "Omrežnina voda - nesub.upor.",
+          "Količina": 0.45,
+          "EM": "kom",
+          "Cena brez DDV": 12.0325,
+          "DDV%": 0.095,
+          "Cena z DDV": 13.17559,
+          "Vredn. brez DDV": 5.41,
+          "Vrednost DDV": 0.52,
+          "Vrednost z DDV": 5.93
+        },
+        {
+          "Zap.": 8,
+          "Storitev/opis": "Omrežnina odvajanje komunalne odpa",
+          "Količina": 0.45,
+          "EM": "kom",
+          "Cena brez DDV": 3.2694,
+          "DDV%": 0.095,
+          "Cena z DDV": 3.57999,
+          "Vredn. brez DDV": 1.47,
+          "Vrednost DDV": 0.14,
+          "Vrednost z DDV": 1.61
+        },
+        {
+          "Zap.": 9,
+          "Storitev/opis": "Odvajanje komunalne odpadne vode",
+          "Količina": 2.7,
+          "EM": "m3",
+          "Cena brez DDV": 0.2722,
+          "DDV%": 0.095,
+          "Cena z DDV": 0.29806,
+          "Vredn. brez DDV": 0.73494,
+          "Vrednost DDV": 0.0698193,
+          "Vrednost z DDV": 0.8047593
+        },
+        {
+          "Zap.": 10,
+          "Storitev/opis": "Omrežnina Čiščenje komunalne odpadr",
+          "Količina": 0.45,
+          "EM": "kom",
+          "Cena brez DDV": 3.4449,
+          "DDV%": 0.095,
+          "Cena z DDV": 3.77217,
+          "Vredn. brez DDV": 1.56,
+          "Vrednost DDV": 0.15,
+          "Vrednost z DDV": 1.71
+        },
+        {
+          "Zap.": 11,
+          "Storitev/opis": "Čiščenje komunalne odpadne vode",
+          "Količina": 2.7,
+          "EM": "m3",
+          "Cena brez DDV": 0.4996,
+          "DDV%": 0.095,
+          "Cena z DDV": 0.54706,
+          "Vredn. brez DDV": 1.34892,
+          "Vrednost DDV": 0.1281474,
+          "Vrednost z DDV": 1.4770674
+        },
+        {
+          "Zap.": 12,
+          "Storitev/opis": "Odvajanje padavinske odp.vode s streh",
+          "Količina": 39.8821,
+          "EM": "m3",
+          "Cena brez DDV": 0.1149,
+          "DDV%": 0.095,
+          "Cena z DDV": 0.12582,
+          "Vredn. brez DDV": 4.58285329,
+          "Vrednost DDV": 0.43537106255,
+          "Vrednost z DDV": 5.01822435255
+        },
+        {
+          "Zap.": 13,
+          "Storitev/opis": "Omrežnina Čiščenje padavinske odp.vc",
+          "Količina": 39.8821,
+          "EM": "m3",
+          "Cena brez DDV": 0.0398,
+          "DDV%": 0.095,
+          "Cena z DDV": 0.04358,
+          "Vredn. brez DDV": 1.58731778,
+          "Vrednost DDV": 0.1507951891,
+          "Vrednost z DDV": 1.7381129691
+        },
+        {
+          "Zap.": 14,
+          "Storitev/opis": "Čiščenje padavinske odp.vode s streh",
+          "Količina": 39.8821,
+          "EM": "m3",
+          "Cena brez DDV": 0.0632,
+          "DDV%": 0.095,
+          "Cena z DDV": 0.0692,
+          "Vredn. brez DDV": 2.52093552,
+          "Vrednost DDV": 0.2394888744,
+          "Vrednost z DDV": 2.7604243944
+        },
+        {
+          "Zap.": 15,
+          "Storitev/opis": "Omrežnina odvajanje padavinske odp",
+          "Količina": 39.8821,
+          "EM": "m3",
+          "Cena brez DDV": 0.1262,
+          "DDV%": 0.095,
+          "Cena z DDV": 0.13819,
+          "Vredn. brez DDV": 5.03264422,
+          "Vrednost DDV": 0.4781012009,
+          "Vrednost z DDV": 5.5107454209
+        },
+        {
+          "Zap.": 16,
+          "Storitev/opis": "Okolj.daj za onesn.okolja (priklj, na AN)",
+          "Količina": 2.7,
+          "EM": "m3",
+          "Cena brez DDV": 0.0528,
+          "DDV%": 0,
+          "Cena z DDV": 0.0528,
+          "Vredn. brez DDV": 0.14256,
+          "Vrednost DDV": 0,
+          "Vrednost z DDV": 0.14256
+        },
+        {
+          "Zap.": "SKUPAJ",
+          "Storitev/opis": "Skupaj",
+          "Količina": 171.6784,
+          "Vredn. brez DDV": 27.01160081,
+          "Vrednost DDV": 2.56075887695,
+          "Vrednost z DDV": 29.57235968695
+        }
+      ]
+    },
+{
+  "racun": {
+    "mesec": "oktober",
+    "leto": 2025,
+    "id": 25050512,
+    "SKUPAJ": {
+      "Količina": 1423.8945,
+      "Vredn. brez DDV": 421.45789234,
+      "Vrednost DDV": 88.70265739403,
+      "Vrednost z DDV": 510.16054973403
     }
+  },
+  "ELEKTRIKA": [
+    {
+      "Zap.": 17,
+      "Storitev/opis": "Dogovorjena moč",
+      "Količina": 2.3,
+      "EM": "kW",
+      "Cena brez DDV": 0.16297,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.19882,
+      "Vredn. brez DDV": 0.37,
+      "Vrednost DDV": 0.0814,
+      "Vrednost z DDV": 0.4514
+    },
+    {
+      "Zap.": 19,
+      "Storitev/opis": "Energija VT",
+      "Količina": 98,
+      "EM": "kWh",
+      "Cena brez DDV": 0.12479,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.15224,
+      "Vredn. brez DDV": 12.22942,
+      "Vrednost DDV": 2.690472,
+      "Vrednost z DDV": 14.919892
+    },
+    {
+      "Zap.": 20,
+      "Storitev/opis": "Energija MT",
+      "Količina": 125,
+      "EM": "kWh",
+      "Cena brez DDV": 0.10285,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.12548,
+      "Vredn. brez DDV": 12.85625,
+      "Vrednost DDV": 2.828375,
+      "Vrednost z DDV": 15.684625
+    },
+    {
+      "Zap.": 18,
+      "Storitev/opis": "Prevzeta EE Omrežnina",
+      "Količina": 223,
+      "EM": "kWh",
+      "Cena brez DDV": 0.01831,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.02234,
+      "Vredn. brez DDV": 4.08313,
+      "Värjednost DDV": 0.8982886,
+      "Vrednost z DDV": 4.9814186
+    },
+    {
+      "Zap.": 21,
+      "Storitev/opis": "Fiks.del-pavšalni strošek",
+      "Količina": 1,
+      "EM": "",
+      "Cena brez DDV": 0.99,
+      "DDV%": 0.22,
+      "Cena z DDV": 1.2078,
+      "Vredn. brez DDV": 0.99,
+      "Vrednost DDV": 0.22,
+      "Vrednost z DDV": 1.21
+    },
+    {
+      "Zap.": 22,
+      "Storitev/opis": "Prispevek OVE+SPTE",
+      "Količina": 2.3,
+      "EM": "kW",
+      "Cena brez DDV": 0.77562,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.94626,
+      "Vredn. brez DDV": 1.78,
+      "Vrednost DDV": 0.39,
+      "Vrednost z DDV": 2.17
+    },
+    {
+      "Zap.": 23,
+      "Storitev/opis": "Prispevek za EnU",
+      "Količina": 223,
+      "EM": "kWh",
+      "Cena brez DDV": 0.0008,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.00098,
+      "Vredn. brez DDV": 0.1784,
+      "Vrednost DDV": 0.039248,
+      "Vrednost z DDV": 0.217648
+    },
+    {
+      "Zap.": 24,
+      "Storitev/opis": "Prispevek za DelOp",
+      "Količina": 223,
+      "EM": "kWh",
+      "Cena brez DDV": 0.00013,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.00016,
+      "Vredn. brez DDV": 0.02899,
+      "Vrednost DDV": 0.0063778,
+      "Vrednost z DDV": 0.0353678
+    },
+    {
+      "Zap.": 25,
+      "Storitev/opis": "Trošarina I",
+      "Količina": 223,
+      "EM": "kWh",
+      "Cena brez DDV": 0.00153,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.00187,
+      "Vredn. brez DDV": 0.34119,
+      "Vrednost DDV": 0.0750618,
+      "Vrednost z DDV": 0.4162518
+    },
+    {
+      "Zap.": "SKUPAJ",
+      "Storitev/opis": "Skupaj",
+      "Količina": 1097.6,
+      "Vredn. brez DDV": 32.83038,
+      "Vrednost DDV": 7.2286236,
+      "Vrednost z DDV": 40.0590036
+    }
+  ],
+  "OGREVANJE": [
+    {
+      "Zap.": 1,
+      "Storitev/opis": "OGP 02 Ogrevanje prost. INDUSTR. O",
+      "Količina": 3.8524,
+      "EM": "MWh",
+      "Cena brez DDV": 73.05421,
+      "DDV%": 0.22,
+      "Cena z DDV": 89.12614,
+      "Vredn. brez DDV": 281.40580604,
+      "Vrednost DDV": 61.909277328,
+      "Vrednost z DDV": 343.315083368
+    },
+    {
+      "Zap.": 2,
+      "Storitev/opis": "OGP 02 Obračunska moč (OP)-IND. O",
+      "Količina": 0.0355,
+      "EM": "MW",
+      "Cena brez DDV": 2885.3,
+      "DDV%": 0.22,
+      "Cena z DDV": 3520.07,
+      "Vredn. brez DDV": 102.42,
+      "Vrednost DDV": 22.53,
+      "Vrednost z DDV": 124.95
+    },
+    {
+      "Zap.": 3,
+      "Storitev/opis": "Dodatek k ceni toplota",
+      "Količina": 3.8524,
+      "EM": "MWh",
+      "Cena brez DDV": 0.8,
+      "DDV%": 0.22,
+      "Cena z DDV": 0.976,
+      "Vredn. brez DDV": 3.08192,
+      "Vrednost DDV": 0.6780224,
+      "Vrednost z DDV": 3.7599424
+    },
+    {
+      "Zap.": 4,
+      "Storitev/opis": "Prispevek za OVE in SPTE toplota",
+      "Količina": 3.8524,
+      "EM": "MWh",
+      "Cena brez DDV": 0.99045,
+      "DDV%": 0.22,
+      "Cena z DDV": 1.20835,
+      "Vredn. brez DDV": 3.8155263,
+      "Vrednost DDV": 0.839415786,
+      "Vrednost z DDV": 4.654942086
+    },
+    {
+      "Zap.": 5,
+      "Storitev/opis": "Stevnina toplotna energija",
+      "Količina": 0.45,
+      "EM": "KOM",
+      "Cena brez DDV": 5.02738,
+      "DDV%": 0.22,
+      "Cena z DDV": 4.1208,
+      "Vredn. brez DDV": 1.85,
+      "Vrednost DDV": 0.41,
+      "Vrednost z DDV": 2.26
+    },
+    {
+      "Zap.": "SKUPAJ",
+      "Storitev/opis": "Skupaj",
+      "Količina": 12.2945,
+      "Vredn. brez DDV": 392.57324634,
+      "Vrednost DDV": 86.366715114,
+      "Vrednost z DDV": 478.939961454
+    }
+  ],
+  "VODA": [
+    {
+      "Zap.": 6,
+      "Storitev/opis": "Vodarina",
+      "Količina": 2.5,
+      "EM": "m3",
+      "Cena brez DDV": 0.9709,
+      "DDV%": 0.095,
+      "Cena z DDV": 1.06314,
+      "Vredn. brez DDV": 2.42725,
+      "Vrednost DDV": 0.23058875,
+      "Vrednost z DDV": 2.65783875
+    },
+    {
+      "Zap.": 7,
+      "Storitev/opis": "Omrežnina voda - nesub.upor.",
+      "Količina": 0.45,
+      "EM": "kom",
+      "Cena brez DDV": 12.0325,
+      "DDV%": 0.095,
+      "Cena z DDV": 13.17559,
+      "Vredn. brez DDV": 5.41,
+      "Vrednost DDV": 0.52,
+      "Vrednost z DDV": 5.93
+    },
+    {
+      "Zap.": 8,
+      "Storitev/opis": "Omrežnina odvajanje komunalne odpa",
+      "Količina": 0.45,
+      "EM": "kom",
+      "Cena brez DDV": 3.2694,
+      "DDV%": 0.095,
+      "Cena z DDV": 3.57999,
+      "Vredn. brez DDV": 1.47,
+      "Vrednost DDV": 0.14,
+      "Vrednost z DDV": 1.61
+    },
+    {
+      "Zap.": 9,
+      "Storitev/opis": "Odvajanje komunalne odpadne vode",
+      "Količina": 2.5,
+      "EM": "m3",
+      "Cena brez DDV": 0.2722,
+      "DDV%": 0.095,
+      "Cena z DDV": 0.29806,
+      "Vredn. brez DDV": 0.6805,
+      "Vrednost DDV": 0.0646475,
+      "Vrednost z DDV": 0.7451475
+    },
+    {
+      "Zap.": 10,
+      "Storitev/opis": "Omrežnina Čiščenje komunalne odpadr",
+      "Količina": 0.45,
+      "EM": "kom",
+      "Cena brez DDV": 3.4449,
+      "DDV%": 0.095,
+      "Cena z DDV": 3.77217,
+      "Vredn. brez DDV": 1.56,
+      "Vrednost DDV": 0.15,
+      "Vrednost z DDV": 1.71
+    },
+    {
+      "Zap.": 11,
+      "Storitev/opis": "Čiščenje komunalne odpadne vode",
+      "Količina": 2.5,
+      "EM": "m3",
+      "Cena brez DDV": 0.4996,
+      "DDV%": 0.095,
+      "Cena z DDV": 0.54706,
+      "Vredn. brez DDV": 1.249,
+      "Vrednost DDV": 0.118655,
+      "Vrednost z DDV": 1.367655
+    },
+    {
+      "Zap.": 12,
+      "Storitev/opis": "Odvajanje padavinske odp.vode s streh",
+      "Količina": 42.1567,
+      "EM": "m3",
+      "Cena brez DDV": 0.1149,
+      "DDV%": 0.095,
+      "Cena z DDV": 0.12582,
+      "Vredn. brez DDV": 4.84378483,
+      "Vrednost DDV": 0.46015955885,
+      "Vrednost z DDV": 5.30394438885
+    },
+    {
+      "Zap.": 13,
+      "Storitev/opis": "Omrežnina Čiščenje padavinske odp.vc",
+      "Količina": 42.1567,
+      "EM": "m3",
+      "Cena brez DDV": 0.0398,
+      "DDV%": 0.095,
+      "Cena z DDV": 0.04358,
+      "Vredn. brez DDV": 1.67783666,
+      "Vrednost DDV": 0.1593944827,
+      "Vrednost z DDV": 1.8372311427
+    },
+    {
+      "Zap.": 14,
+      "Storitev/opis": "Čiščenje padavinske odp.vode s streh",
+      "Količina": 42.1567,
+      "EM": "m3",
+      "Cena brez DDV": 0.0632,
+      "DDV%": 0.095,
+      "Cena z DDV": 0.0692,
+      "Vredn. brez DDV": 2.66430344,
+      "Vrednost DDV": 0.2531088276,
+      "Vrednost z DDV": 2.9174122676
+    },
+    {
+      "Zap.": 15,
+      "Storitev/opis": "Omrežnina odvajanje padavinske odp",
+      "Količina": 42.1567,
+      "EM": "m3",
+      "Cena brez DDV": 0.1262,
+      "DDV%": 0.095,
+      "Cena z DDV": 0.13819,
+      "Vredn. brez DDV": 5.31901554,
+      "Vrednost DDV": 0.5053064763,
+      "Vrednost z DDV": 5.8243220163
+    },
+    {
+      "Zap.": 16,
+      "Storitev/opis": "Okolj.daj za onesn.okolja (priklj, na AN)",
+      "Količina": 2.5,
+      "EM": "m3",
+      "Cena brez DDV": 0.0528,
+      "DDV%": 0,
+      "Cena z DDV": 0.0528,
+      "Vredn. brez DDV": 0.132,
+      "Vrednost DDV": 0,
+      "Vrednost z DDV": 0.132
+    },
+    {
+      "Zap.": "SKUPAJ",
+      "Storitev/opis": "Skupaj",
+      "Količina": 314.0,
+      "Vredn. brez DDV": 27.41168047,
+      "Vrednost DDV": 2.10765542523,
+      "Vrednost z DDV": 29.51933589523
+    }
+  ]
+}
   
 ]

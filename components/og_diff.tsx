@@ -34,11 +34,11 @@ const chartData = [
 
 const chartConfig = {
   desktop: {
-    label: "Desktop",
-    color: "var(--chart-1)",
+    label: "2024",
+    color: "var(--chart-4)",
   },
   mobile: {
-    label: "Mobile",
+    label: "2025",
     color: "var(--chart-2)",
   },
 } satisfies ChartConfig
@@ -47,10 +47,11 @@ export function Ogdiff() {
   return (
     <Card className="relative overflow-hidden">
       <CardHeader className="z-50">
-        <CardTitle>Area Chart - Gradient</CardTitle>
+        <CardTitle>Primerjava s prejšnjim obdobjem</CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+          Komulativna poraba ogrevanja - primerjava z 2024
         </CardDescription>
+
       </CardHeader>
 
         <ChartContainer config={chartConfig} className="absolute top-0 left-[-20px] right-[-20px] w-[110%] h-full">

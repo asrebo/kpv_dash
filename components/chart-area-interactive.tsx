@@ -669,7 +669,63 @@ const chartData = [
     voda_m3: 1.23,
     ogrevanje_kWh: 12.7,
     skupaj: 15.77,
-  }
+  },
+    {
+    date: '2025-11-12',
+    elektrika_kWh: 1.86,
+    voda_m3: 1.24,
+    ogrevanje_kWh: 12.9,
+    skupaj: 16.0,
+  },
+  {
+    date: '2025-11-13',
+    elektrika_kWh: 1.88,
+    voda_m3: 1.25,
+    ogrevanje_kWh: 13.1,
+    skupaj: 16.23,
+  },
+  {
+    date: '2025-11-14',
+    elektrika_kWh: 1.9,
+    voda_m3: 1.26,
+    ogrevanje_kWh: 13.3,
+    skupaj: 16.46,
+  },
+  {
+    date: '2025-11-15',
+    elektrika_kWh: 1.12,
+    voda_m3: 0.93,
+    ogrevanje_kWh: 11.8,
+    skupaj: 13.85,
+  },
+  {
+    date: '2025-11-16',
+    elektrika_kWh: 1.08,
+    voda_m3: 0.91,
+    ogrevanje_kWh: 11.5,
+    skupaj: 13.49,
+  },
+  {
+    date: '2025-11-17',
+    elektrika_kWh: 1.92,
+    voda_m3: 1.27,
+    ogrevanje_kWh: 13.5,
+    skupaj: 16.69,
+  },
+  {
+    date: '2025-11-18',
+    elektrika_kWh: 1.94,
+    voda_m3: 1.28,
+    ogrevanje_kWh: 13.7,
+    skupaj: 16.92,
+  },
+  {
+    date: '2025-11-19',
+    elektrika_kWh: 1.96,
+    voda_m3: 1.29,
+    ogrevanje_kWh: 13.9,
+    skupaj: 17.15,
+  },
 ];
 
 const chartConfig = {

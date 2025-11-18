@@ -1,6 +1,15 @@
 "use client"
 
-
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { Thermometer } from 'lucide-react';
 
 import { useEffect, useState } from "react";
 
@@ -20,8 +29,8 @@ const Temp = ({
 
   useEffect(() => {
     // Animate temperature number
-    const duration = 2000;
-    const steps = 60;
+    const duration = 3000;
+    const steps = 23;
     const increment = targetTemp / steps;
     const stepDuration = duration / steps;
 
@@ -54,7 +63,7 @@ const Temp = ({
   }, [targetTemp]);
 
   const size = 200;
-  const strokeWidth = 14;
+  const strokeWidth = 12;
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   
@@ -95,8 +104,12 @@ const Temp = ({
   }
 
   return (
-    <div className="card flex items-center justify-center  bg-background">
-      <div className="animate-scale-in">
+    <Card className="">
+      <CardHeader>
+        <CardTitle><Thermometer className='text-[var(--primary)] inline'/> Notranja temperatura</CardTitle>
+        <CardDescription>Prikazana povprečna notranja temperatura</CardDescription>
+      </CardHeader>
+      <CardContent>
         <svg 
           width={size} 
           height={size} 
@@ -108,36 +121,16 @@ const Temp = ({
             <linearGradient id={gradientId} gradientUnits="userSpaceOnUse">
               <stop 
                 offset="0%" 
-                stopColor="hsl(var(--cold))"
+                stopColor="hsl(0, 85%, 55%)"
               >
-                <animate
-                  attributeName="stop-color"
-                  values="hsl(var(--cold));hsl(var(--cold));hsl(var(--cool))"
-                  dur="2s"
-                  fill="freeze"
-                />
+             
               </stop>
-              <stop 
-                offset={`${Math.min(progressRatio * 100, 100)}%`}
-                stopColor="hsl(var(--cold))"
-              >
-                <animate
-                  attributeName="stop-color"
-                  values="hsl(var(--cold));hsl(var(--cool));hsl(var(--warm));hsl(var(--hot))"
-                  dur="2s"
-                  fill="freeze"
-                />
-              </stop>
+        
               <stop 
                 offset="100%" 
-                stopColor="hsl(var(--hot))"
+                stopColor="hsl(0, 0%, 78.04%)"
               >
-                <animate
-                  attributeName="stop-color"
-                  values="hsl(var(--cold));hsl(var(--warm));hsl(var(--hot))"
-                  dur="2s"
-                  fill="freeze"
-                />
+                
               </stop>
             </linearGradient>
           </defs>
@@ -148,8 +141,8 @@ const Temp = ({
             cy={size / 2}
             r={radius}
             fill="none"
-            stroke="hsl(var(--muted))"
-            strokeWidth={strokeWidth}
+         
+   
             opacity={0.2}
           />
 
@@ -165,7 +158,7 @@ const Temp = ({
             strokeDasharray={circumference}
             strokeDashoffset={offset}
             style={{
-              transition: "stroke-dashoffset 0.5s ease-out",
+              transition: "stroke-dashoffset .05s ease-out",
             }}
           />
 
@@ -175,7 +168,7 @@ const Temp = ({
               cx={size / 2}
               cy={size / 2}
               r={radius - strokeWidth - 10}
-              fill="#fefefe"
+              fill="none"
               stroke="hsl(var(--border))"
               strokeWidth={1}
             />
@@ -215,8 +208,8 @@ const Temp = ({
             </text>
           </g>
         </svg>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   );
 };
 
