@@ -444,7 +444,7 @@ export function DataTable({
         value="focus-documents"
         className="flex flex-col px-4 lg:px-6"
       >
-        <div className="aspect-video w-full flex-1 rounded-lg border border-dashed">sdcsdcdsc</div>
+        <div className="aspect-video w-full flex-1 rounded-lg border border-dashed"></div>
       </TabsContent>
     </Tabs>
   )
@@ -505,7 +505,7 @@ const chartData = [
         <DrawerHeader className="gap-1">
           <DrawerTitle>{item.racun.mesec}</DrawerTitle>
           <DrawerDescription>
-            Showing total visitors for the last 6 months
+            Prikaz podrobnosti računa ID: {item.racun.id}
           </DrawerDescription>
         </DrawerHeader>
         <div className="flex flex-col gap-4 overflow-y-auto  text-sm">
@@ -525,13 +525,11 @@ const chartData = [
               <Separator />
               <div className="grid gap-2 p-4">
                 <div className="flex gap-2 leading-none font-medium">
-                  Trending up by 5.2% this month{" "}
+                  Povečanje porabe za 5.2% v primerjavi z istim obdobjem lanskega leta{" "}
                   <IconTrendingUp className="size-4" />
                 </div>
                 <div className="text-muted-foreground">
-                  Showing total visitors for the last 6 months. This is just
-                  some random text to test the layout. It spans multiple lines
-                  and should wrap around.
+                 Preverite kako lahko z prejetimi žetoni znižate strošek mesečnega računa za energente.
                 </div>
               </div>
               <Separator />

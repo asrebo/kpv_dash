@@ -90,7 +90,7 @@ export function SectionCards() {
       </Card>
        <Card className="@container/card text-white relative space-between" style={{ background:"#c96442" }}>
         <CardHeader>
-          <CardDescription className="text-white">Prejeta sredstva</CardDescription>
+          <CardDescription className="text-white">Prejeti žetoni</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-5xl">
          <CountingNumber
   number={231}

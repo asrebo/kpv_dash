@@ -21,29 +21,29 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
-export const description = "Primerjava porabe po obdobjih" 
+export const description = "An area chart with gradient fill"
 
 const chartData = [
-  { month: "Januar", "2024": 2.8, "2025": 2.1 },
-  { month: "Februar", "2024": 2.6, "2025": 2.4 },
-  { month: "Marec", "2024": 2.1, "2025": 1.9 },
-  { month: "April", "2024": 1.3, "2025": 1.5 },
-  { month: "Maj", "2024": 0.6, "2025": 0.8 },
-  { month: "Junij", "2024": 0, "2025": 0 },
-  { month: "Julij", "2024": 0, "2025": 0 },
-  { month: "Avgust", "2024": 0, "2025": 0 },
-  { month: "September", "2024": 0.4, "2025": 0.5 },
-  { month: "Oktober", "2024": 1.2, "2025": 1.4 },
-  { month: "November", "2024": 2.3, "2025": 2.0 },
-  { month: "December", "2024": 3.0, "2025": 2.7 },
+  { month: "Januar", desktop: 2.8, mobile: 2.1 },
+  { month: "Februar", desktop: 2.6, mobile: 2.4 },
+  { month: "Marec", desktop: 2.1, mobile: 1.9 },
+  { month: "April", desktop: 1.3, mobile: 1.5 },
+  { month: "Maj", desktop: 0.6, mobile: 0.8 },
+  { month: "Junij", desktop: 0, mobile: 0 },
+  { month: "Julij", desktop: 0, mobile: 0 },
+  { month: "Avgust", desktop: 0, mobile: 0 },
+  { month: "September", desktop: 0.4, mobile: 0.5 },
+  { month: "Oktober", desktop: 1.2, mobile: 1.4 },
+  { month: "November", desktop: 2.3, mobile: 2.0 },
+  { month: "December", desktop: 3.0, mobile: 2.7 },
 ]
 
 const chartConfig = {
-  "2024": {
+  desktop: {
     label: "2024",
     color: "var(--chart-4)",
   },
-  "2025": {
+  mobile: {
     label: "2025",
     color: "var(--chart-2)",
   },
@@ -99,7 +99,7 @@ export function Ogdiff() {
               </linearGradient>
             </defs>
             <Area
-              dataKey="2024"
+              dataKey="mobile"
               type="natural"
               fill="url(#fillMobile)"
               fillOpacity={0.4}
@@ -107,7 +107,7 @@ export function Ogdiff() {
               stackId="a"
             />
             <Area
-              dataKey="2025"
+              dataKey="desktop"
               type="natural"
               fill="url(#fillDesktop)"
               fillOpacity={0.4}
