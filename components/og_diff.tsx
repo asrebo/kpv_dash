@@ -21,23 +21,29 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
-export const description = "An area chart with gradient fill"
+export const description = "Primerjava porabe po obdobjih" 
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+  { month: "Januar", "2024": 2.8, "2025": 2.1 },
+  { month: "Februar", "2024": 2.6, "2025": 2.4 },
+  { month: "Marec", "2024": 2.1, "2025": 1.9 },
+  { month: "April", "2024": 1.3, "2025": 1.5 },
+  { month: "Maj", "2024": 0.6, "2025": 0.8 },
+  { month: "Junij", "2024": 0, "2025": 0 },
+  { month: "Julij", "2024": 0, "2025": 0 },
+  { month: "Avgust", "2024": 0, "2025": 0 },
+  { month: "September", "2024": 0.4, "2025": 0.5 },
+  { month: "Oktober", "2024": 1.2, "2025": 1.4 },
+  { month: "November", "2024": 2.3, "2025": 2.0 },
+  { month: "December", "2024": 3.0, "2025": 2.7 },
 ]
 
 const chartConfig = {
-  desktop: {
+  "2024": {
     label: "2024",
     color: "var(--chart-4)",
   },
-  mobile: {
+  "2025": {
     label: "2025",
     color: "var(--chart-2)",
   },
@@ -93,7 +99,7 @@ export function Ogdiff() {
               </linearGradient>
             </defs>
             <Area
-              dataKey="mobile"
+              dataKey="2024"
               type="natural"
               fill="url(#fillMobile)"
               fillOpacity={0.4}
@@ -101,7 +107,7 @@ export function Ogdiff() {
               stackId="a"
             />
             <Area
-              dataKey="desktop"
+              dataKey="2025"
               type="natural"
               fill="url(#fillDesktop)"
               fillOpacity={0.4}
