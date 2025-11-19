@@ -233,7 +233,7 @@ function DraggableRow({ row }: { row: Row<Mesec> }) {
 export function DataTable({
   data: initialData,
 }: {
-  data: Mesec[]
+  data: any
 }) {
 
   initialData = initialData.reverse(); 
@@ -257,7 +257,7 @@ export function DataTable({
   )
 
   const dataIds = React.useMemo<UniqueIdentifier[]>(
-    () => data?.map(({ racun: { id } }) => String(id)) || [],
+    () => data?.map((row: Mesec) => String(row.racun.id)) || [],
     [data]
   )
 
