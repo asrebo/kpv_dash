@@ -191,3 +191,9 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+
+@layer components {
+ #results {
+    transition: height 0.5s ease;
+  }     
+}

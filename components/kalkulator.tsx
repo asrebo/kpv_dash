@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
+import Image from "next/image";
 import {
   Home,
   Layers,
@@ -22,7 +23,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const categories = [
   {
-    title: "2. Izolacija objekta",
+    title: "1. Izolacija objekta",
     icon: Thermometer,
     items: [
       { label: "Zunanji zidovi", icon: Home },
@@ -32,7 +33,7 @@ const categories = [
     ],
   },
   {
-    title: "3. Večji porabniki energije",
+    title: "2. Porabniki energije",
     icon: Refrigerator,
     items: [
       { label: "Priprava živil", icon: Utensils },
@@ -74,12 +75,14 @@ export default function EnergyCalculator() {
   };
 
   function handler(){
-    console.log(score.percent)
+   
     setEnded(true);
 
   }
 
   const score = getScore();
+
+
 
   return (
     <>
@@ -91,7 +94,7 @@ export default function EnergyCalculator() {
       style={{ width:"500px"}}
    />
     </div>
-    <div className=" max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+    <div className=" max-w-7xl w-full mx-auto grid md:grid-cols-3 gap-4">
       {/* Leva stran - kategorije */}
       <div className="md:col-span-2 space-y-6">
         {categories.map((cat) => (
@@ -107,7 +110,7 @@ export default function EnergyCalculator() {
                     <p className="text-sm font-medium">{label}</p>
                   </div>
                   <Slider
-                    defaultValue={[3]}
+                    defaultValue={[0]}
                     max={5}
                     min={1}
                     step={1}
@@ -126,14 +129,14 @@ export default function EnergyCalculator() {
       </div>
 
       {/* Desna stran - rezultati */}
-      <div className="bg-[#f1f0e9] p-6 rounded-2xl flex flex-col justify-between relative">
-          
-        <div className="space-y-6">
+      <div className="p-3 border rounded-2xl flex flex-col justify-between relative">
+          <div id="results" className="absolute bottom-0 left-0 w-full bg-[#cc836d1a]" style={{height:score.percent+ "%"}}></div>
+        <div className="space-y-3">
           {score.scores.map(({ title, icon: Icon, current, max }) => (
-            <div key={title} className="flex items-center gap-3 ">
+            <div key={title} className="flex items-center justify-around gap-2">
               <Icon className="w-5 h-5" />
               <span className="font-semibold flex-1">{title}</span>
-              <span className="font-bold">{current} / {max}</span>
+              <span className="font-bold block">{current} / {max}</span>
             </div>
           ))}
         </div>
@@ -145,6 +148,12 @@ export default function EnergyCalculator() {
           </div>
          
         <div className="text-center mt-6 z-1">
+          { ended && 
+          <div id="score" className="text-5xl font-bold mb-6" >
+            {score.percent >= 90 ? 10 : score.percent >= 80 ? 8 : score.percent >= 70 ? 6 : score.percent >= 60 ? 4 : 2}
+            <Image src="/coin.png" alt="" width={50} height={50} className="inline-block ml-2 align-top" />
+          </div>
+          }
           <Button onClick={handler} className="w-full">Zaključi test</Button>
           <p className="text-xs text-gray-500 mt-2">
             Zadnji test {new Date().toLocaleDateString("sl-SI")}
