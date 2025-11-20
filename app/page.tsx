@@ -11,15 +11,14 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Lock, Mail } from "lucide-react";
 
+import Waves from "@/components/wawes";
+
 export default function ShadcnLoginPage() {
   const router = useRouter();
-  const [form, setForm] = useState({ email: "", password: "" });
+
   const [loading, setLoading] = useState(false);
 
-  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  }, []);
+
 
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
@@ -37,6 +36,7 @@ export default function ShadcnLoginPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 relative overflow-hidden bg-sidebar">
+      <Waves />
       <motion.div
         initial={{ opacity: 0, y: 8, scale: 0.995 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -65,8 +65,8 @@ export default function ShadcnLoginPage() {
                     name="email"
                     type="email"
                     placeholder="vi@example.com"
-                    value={form.email}
-                    onChange={handleChange}
+                  
+               
                     className="pl-10"
                     required
                     aria-label="E-naslov"
@@ -84,8 +84,8 @@ export default function ShadcnLoginPage() {
                     name="password"
                     type="password"
                     placeholder="********"
-                    value={form.password}
-                    onChange={handleChange}
+                
+                
                     className="pl-10"
                     required
                     aria-label="Geslo"
