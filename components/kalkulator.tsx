@@ -151,7 +151,7 @@ export default function EnergyCalculator() {
           { ended && 
           <div id="score" className="text-5xl font-bold mb-6" >
             {score.percent >= 90 ? 10 : score.percent >= 80 ? 8 : score.percent >= 70 ? 6 : score.percent >= 60 ? 4 : 2}
-            <Image src="/coin.png" alt="" width={50} height={50} className="inline-block ml-2 align-top" />
+            <Image src="/coin.png" alt="" width={60} height={60} className="inline-block ml-2 align-top" />
           </div>
           }
           <Button onClick={handler} className="w-full">Zaključi test</Button>
