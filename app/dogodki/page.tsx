@@ -40,7 +40,7 @@ function GreenEvents() {
     {
       id: 1,
       title: 'Delavnica o solarnih panelih',
-      date: '15. oktober 2025',
+      date: '15. januar 2026',
       time: '14:00 - 17:00',
       location: 'Center za zelene tehnologije, Ljubljana',
       attendees: 45,
@@ -52,7 +52,7 @@ function GreenEvents() {
     {
       id: 2,
       title: 'Seminar o življenju brez odpadkov',
-      date: '22. oktober 2025',
+      date: '22. februar 2026',
       time: '10:00 - 13:00',
       location: 'Kulturni dom, Maribor',
       attendees: 68,
@@ -64,7 +64,7 @@ function GreenEvents() {
     {
       id: 3,
       title: 'Mestna akcija sajenja dreves',
-      date: '5. november 2025',
+      date: '5. april 2026',
       time: '9:00 - 12:00',
       location: 'Park Tivoli, Ljubljana',
       attendees: 120,
@@ -96,7 +96,7 @@ function GreenEvents() {
               key={event.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="px-6 py-4" style={{ background: ` #966e5fff` }}>
+              <div className="px-6 py-4" style={{ background: ` #7e5e52` }}>
                 <div className="flex items-center justify-between">
                   <h2 className="text-2xl font-bold text-white">
                     {event.title}
@@ -155,7 +155,7 @@ function GreenEvents() {
 
                 <button
                   className="mt-6 w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
-                  style={{ backgroundColor: '#71321c' }}
+                  style={{ backgroundColor: '#ba522f' }}
                 >
                   Prijavi se zdaj
                 </button>

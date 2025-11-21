@@ -44,6 +44,8 @@ const chartData = [
   { month: 'Julij', avto: 873, kolo: 190, javni_prevoz: 98 },
   { month: 'Avgust', avto: 409, kolo: 130, javni_prevoz: 156 },
   { month: 'September', avto: 214, kolo: 140, javni_prevoz: 189 },
+  { month: 'Oktober', avto: 320, kolo: 150, javni_prevoz: 170 },
+  { month: 'November', avto: 290, kolo: 140, javni_prevoz: 160 },
 ];
 
 const chartData1 = [
@@ -53,6 +55,8 @@ const chartData1 = [
   { month: 'Julij', avto: 289, kolo: 67, javni_prevoz: 176 },
   { month: 'Avgust', avto: 256, kolo: 218, javni_prevoz: 134 },
   { month: 'September', avto: 223, kolo: 156, javni_prevoz: 205 },
+  { month: 'Oktober', avto: 240, kolo: 180, javni_prevoz: 190 },
+  { month: 'November', avto: 260, kolo: 170, javni_prevoz: 180 },
 ];
 
 const chartData2 = [
@@ -62,6 +66,8 @@ const chartData2 = [
   { month: 'Julij', avto: 124, kolo: 203, javni_prevoz: 194 },
   { month: 'Avgust', avto: 247, kolo: 136, javni_prevoz: 148 },
   { month: 'September', avto: 189, kolo: 127, javni_prevoz: 167 },
+  { month: 'Oktober', avto: 210, kolo: 160, javni_prevoz: 150 },
+  { month: 'November', avto: 230, kolo: 150, javni_prevoz: 160 },
 ];
 
 const chartData3 = [
@@ -71,6 +77,8 @@ const chartData3 = [
   { month: 'Julij', avto: 96, kolo: 12, javni_prevoz: 103 },
   { month: 'Avgust', avto: 234, kolo: 4, javni_prevoz: 72 },
   { month: 'September', avto: 268, kolo: 15, javni_prevoz: 94 },
+  { month: 'Oktober', avto: 180, kolo: 25, javni_prevoz: 95 },
+  { month: 'November', avto: 200, kolo: 30, javni_prevoz: 110 },
 ];
 const chartConfig = {
   avto: {
@@ -123,7 +131,7 @@ export default function BikerRide() {
               Tomaž Zajc
             </CardTitle>
             <CardDescription>January - June 2024</CardDescription>
-            <CardAction className='p-4 bg-[var(--chart-4)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 12 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
+            <CardAction className='p-4 bg-[var(--chart-2)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 12 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
           </CardHeader>
           <CardContent className="flex flex-1 ">
             <div className="flex-1">
@@ -173,7 +181,7 @@ export default function BikerRide() {
               Anja Oblak
             </CardTitle>
             <CardDescription>January - June 2024</CardDescription>
-            <CardAction className='p-4 bg-[var(--chart-3)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 21 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
+            <CardAction className='p-4 bg-[var(--chart-2)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 21 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
           </CardHeader>
           <CardContent className="flex flex-1 ">
             <div className="flex-1">
@@ -223,7 +231,7 @@ export default function BikerRide() {
               Luka Mlakar
             </CardTitle>
             <CardDescription>January - June 2024</CardDescription>
-            <CardAction className='p-4 bg-[var(--chart-3)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 13 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
+            <CardAction className='p-4 bg-[var(--chart-2)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 13 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
           </CardHeader>
           <CardContent className="flex flex-1 ">
             <div className="flex-1">
@@ -273,7 +281,7 @@ export default function BikerRide() {
               Maruša Korošec
             </CardTitle>
             <CardDescription>January - June 2024</CardDescription>
-            <CardAction className='p-4 bg-[var(--chart-3)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 6 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
+            <CardAction className='p-4 bg-[var(--chart-2)] rounded text-white font-semibold'><span className='font-thin'>prejetih</span> 6 <Image src="/coin.png" alt="Revenue" width={20} height={20} className="inline" /></CardAction>
           </CardHeader>
           <CardContent className="flex flex-1 ">
             <div className="flex-1">
