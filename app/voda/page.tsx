@@ -27,7 +27,7 @@ export default function Ogrevanje() {
            <ChartBarInteractive />
             <ChartPieDonutText />
           </div>
-          <Opomnik />
+     
         </div>
       </SidebarInset>
     </SidebarProvider>
