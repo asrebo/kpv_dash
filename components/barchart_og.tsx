@@ -447,10 +447,6 @@ const chartData = [
         "date": "2025-11-19",
         "value": 0.2589
     },
-     {
-        "date": "2025-11-20",
-        "value": 0.2211
-    },
     {
         "date": "2025-11-20",
         "value": 0.2034
@@ -458,7 +454,23 @@ const chartData = [
       {
         "date": "2025-11-21",
         "value": 0.2245
-    }
+    },
+        {
+        "date": "2025-11-22",
+        "value": 0.1156
+    },  // Saturday - lower
+    {
+        "date": "2025-11-23",
+        "value": 0.1201
+    }, 
+        {
+        "date": "2025-11-24",
+        "value": 0.2512
+    },
+    {
+        "date": "2025-11-25",
+        "value": 0.2234
+    },
 ]
 
 const chartConfig = {
