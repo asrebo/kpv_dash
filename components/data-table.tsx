@@ -539,8 +539,10 @@ const chartData = [
          <InvoiceTable racun={item} />
         </div>
         <DrawerFooter>
-         
+          <div className="flex space-x-3 gap-1">Stanje žetonov: 231  <img src="/coin.png" alt="Žetoni" className="w-6 h-6" /></div>
+             <Button variant="outline">Uporabi žetone pri plačilu </Button>
           <DrawerClose asChild>
+           
             <Button>Zapri</Button>
           </DrawerClose>
         </DrawerFooter>
